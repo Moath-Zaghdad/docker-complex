@@ -9,7 +9,7 @@ script:
     - docker run moath/react-test npm test -- --coverage
 
 after_success:
-    - docker build -t moath/multi-nginx ./ningx
+    - docker build -t moath/multi-nginx ./nginx
     - docker build -t moath/multi-worker ./worker
     - docker build -t moath/multi-client ./react-client
     - docker build -t moath/multi-server ./express-server
