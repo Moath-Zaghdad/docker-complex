@@ -2,7 +2,7 @@ const keys = require('./keys');
 const redis = require('redis');
 
 const redisClient = redis.createClient({
-    host: key.redisHost,
+    host: keys.redisHost,
     port: keys.redisPort,
     retry_strategy: () => 1000
 });
@@ -19,4 +19,4 @@ subscription.on('message', (channel, message) => {
 });
 
 
-subscription.subscrie('insert');
+subscription.subscribe('insert');
