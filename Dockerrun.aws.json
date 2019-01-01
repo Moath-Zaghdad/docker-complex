@@ -2,28 +2,28 @@
     "AWSEBDockerrunVersion": 2,
     "containerDefinitions": [
         {
-            "name": "React-Client",
+            "name": "client",
             "image": "moath/multi-client",
             "hostname": "react-client",
             "essential": false,
             "memory": 128
         },
         {
-            "name": "Express-Server",
+            "name": "server",
             "image": "moath/multi-server",
             "hostname": "express-server",
             "essential": false,
             "memory": 128
         },
         {
-            "name": "Worker",
+            "name": "worker",
             "image": "moath/multi-worker",
             "hostname": "worker",
             "essential": false,
             "memory": 128
         },
         {
-            "name": "Nginx",
+            "name": "nginx",
             "image": "moath/multi-nginx",
             "hostname": "nginx",
             "essential": true,
@@ -33,7 +33,7 @@
                     "containerPort": 80
                 }
             ],
-            "links": ["React-Client", "Express-Server"],
+            "links": ["client", "server"],
             "memory": 128
         }
     ]
