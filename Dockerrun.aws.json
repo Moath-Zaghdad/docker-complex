@@ -33,7 +33,7 @@
                     "containerPort": 80
                 }
             ],
-            "links": ["React Clinet", "Express Server"],
+            "links": ["React-Clinet", "Express-Server"],
             "memory": 128
         }
     ]
