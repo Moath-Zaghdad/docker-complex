@@ -2,14 +2,14 @@
     "AWSEBDockerrunVersion": 2,
     "containerDefinitions": [
         {
-            "name": "React Client",
+            "name": "React-Client",
             "image": "moath/multi-client",
             "hostname": "react-client",
             "essential": false,
             "memory": 128
         },
         {
-            "name": "Express Server",
+            "name": "Express-Server",
             "image": "moath/multi-server",
             "hostname": "express-server",
             "essential": false,
