@@ -5,19 +5,22 @@
             "name": "React Client",
             "image": "moath/multi-client",
             "hostname": "react-client",
-            "essential": false
+            "essential": false,
+            "memory": 128
         },
         {
             "name": "Express Server",
             "image": "moath/multi-server",
             "hostname": "express-server",
-            "essential": false
+            "essential": false,
+            "memory": 128
         },
         {
             "name": "Worker",
             "image": "moath/multi-worker",
             "hostname": "worker",
-            "essential": false
+            "essential": false,
+            "memory": 128
         },
         {
             "name": "Nginx",
@@ -30,7 +33,8 @@
                     "containerPort": 80
                 }
             ],
-            "links": ["React Clinet", "Express Server"]
+            "links": ["React Clinet", "Express Server"],
+            "memory": 128
         }
     ]
 }
