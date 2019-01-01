@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/Moath-Zaghdad/docker-complex.svg?branch=master)](https://travis-ci.org/Moath-Zaghdad/docker-complex)
 
 ### Fibonacci Sequence
-~[FibonacciSequence](./images/FipSequence.png)
+![FibonacciSequence](./images/FipSequence.png)
 ### FrontEnd
 ![FrontEnd](./images/FrontEnd.png)
 ### Data Storage
