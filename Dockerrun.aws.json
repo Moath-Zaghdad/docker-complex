@@ -1,0 +1,36 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            "name": "React Client",
+            "image": "moath/multi-client",
+            "hostname": "react-client",
+            "essential": false
+        },
+        {
+            "name": "Express Server",
+            "image": "moath/multi-server",
+            "hostname": "express-server",
+            "essential": false
+        },
+        {
+            "name": "Worker",
+            "image": "moath/multi-worker",
+            "hostname": "worker",
+            "essential": false
+        },
+        {
+            "name": "Nginx",
+            "image": "moath/multi-nginx",
+            "hostname": "nginx",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "containerPort": 80
+                }
+            ],
+            "links": ["React Clinet", "Express Server"]
+        }
+    ]
+}
