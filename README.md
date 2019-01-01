@@ -20,3 +20,6 @@ To know more and to customize your ***Dockerrun.aws.json*** see the Documentatio
 
 ## Deployment Flow
 ![DeploymentFlow](./images/DeploymentFlow.png)
+<hr>
+
+![](images/AWS-Elastic.png)
