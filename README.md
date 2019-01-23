@@ -1,4 +1,4 @@
-# Docker Multi-Container
+# Docker Multi-Container with Elastic Beanstalk
 [![Build Status](https://travis-ci.org/Moath-Zaghdad/docker-complex.svg?branch=master)](https://travis-ci.org/Moath-Zaghdad/docker-complex)
 
 We are using Amazon **Elastic Beanstalk** which uses Amazon Elastic Container Service ***(ECS)***
